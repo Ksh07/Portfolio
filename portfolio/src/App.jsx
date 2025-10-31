@@ -1,6 +1,15 @@
-import Header from './components/Header'
-const App = () => {
- return( <Header/>)
-}
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
 
-export default App
+
+const App = () => {
+  return (
+    <>
+      <Header />
+      <main><Hero/></main>
+    </>
+  );
+};
+
+export default App;
