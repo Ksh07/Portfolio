@@ -44,6 +44,9 @@ body {
   @apply pt-20 lg:pt-32
 }
 
+.reveal-up{
+  @apply translate-y-20 opacity-0
+}
 
 .menu-btn {
   /* moved grid to jsx as it was overwriting md:hidden of jsx */
@@ -117,4 +120,10 @@ body {
 
 .text-field::placeholder{
 @apply text-zinc-400
+}
+
+.downloadCvBtn{
+  display: inline-flex;
+  padding-top: 3px!important;
+  
 }
