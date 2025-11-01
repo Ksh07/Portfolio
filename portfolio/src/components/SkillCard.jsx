@@ -1,4 +1,4 @@
-import React from "react";
+
 import PropTypes from "prop-types";
 function SkillCard({ imgSrc, label, desc, classes }) {
 
@@ -15,7 +15,7 @@ function SkillCard({ imgSrc, label, desc, classes }) {
     </div>
   );
 }
-SkillCard.PropTypes = {
+SkillCard.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
