@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import gsap from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {useGSAP} from '@gsap/react'
-
+import WorkHistory from "./components/WorkHistory";
 gsap.registerPlugin(useGSAP,ScrollTrigger)
 
 import {ReactLenis} from 'lenis/react'
@@ -39,7 +39,8 @@ const App = () => {
         <About />
          <Skill />
          <Work/>
-         <Review/>
+         {/* <Review/> */}
+        <WorkHistory/>
          <Contact/>
 
       </main>

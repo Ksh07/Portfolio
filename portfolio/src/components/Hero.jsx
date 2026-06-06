@@ -7,15 +7,15 @@ const Hero = () => {
       <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10">
         <div>
           <div className="flex items-center gap-3">
-            <figure className="img-box w-9 h-9 rounded-lg">
+            {/* <figure className="img-box w-9 h-9 ">
               <img
-                src="/images/avatar-1.jpg"
+                src="/images/avatar-2.png"
                 width={40}
                 height={40}
                 alt="Kshitij Rattan portrait"
                 className="img-cover"
               />
-            </figure>
+            </figure> */}
 
             <div
               className="flex
@@ -27,14 +27,22 @@ const Hero = () => {
               Available for work
             </div>
           </div>
-          <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">Building Scalable Modern Websites for the Future</h2>
-          <div className="flex items-center gap-3"><ButtonPrimary label='Download CV' icon='download' iconClass={'downloadCvBtn'}/> <ButtonOutline href='#about' label='Scroll down' icon='arrow_downward'/></div>
+          <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">Transforming <br /> Ideas
+into Scalable
+Software Solutions</h2>
+          <div className="flex items-center gap-3"><ButtonPrimary  
+           label="Download CV"
+  icon="download"
+  classes="downloadCvBtn"
+  href="/resume.pdf"
+  target="_blank"
+/><ButtonOutline href='#about' label='Scroll down' icon='arrow_downward'/></div>
         </div>
         <div className="hidden lg:block">
           {" "}
-          <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% via-sky-400/40 to-65% rounded-[60px] overflow-hidden">
+          <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t rounded-[60px] overflow-hidden">
             <img
-              src="/images/hero-banner.png"
+              src="/images/self4.png"
               alt="Kshitij Rattan"
               width={656}
               height={800}

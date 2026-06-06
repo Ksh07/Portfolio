@@ -10,15 +10,15 @@ const sitemap = [
     href: "#about",
   },
   {
+    label: "Projects",
+    href: "#projects",
+  },
+  {
     label: "Work",
-    href: "#work",
+    href: "#work-history",
   },
   {
-    label: "Reviews",
-    href: "#reviews",
-  },
-  {
-    label: "Contact me",
+    label: "Contact",
     href: "#contact",
   },
 ];
@@ -26,23 +26,17 @@ const sitemap = [
 const socials = [
   {
     label: "GitHub",
-    href: "https://www.github.com/codewithsadee-org",
+        href: "https://github.com/Ksh07",
+
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/codewithsadee",
+      href: "https://www.linkedin.com/in/kshitij-rattan-3976b9232/",
+
   },
   {
-    label: "Twitter X",
-    href: "https://x.com/codewithsadee_",
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/codewithsadee",
-  },
-  {
-    label: "CodePen",
-    href: "https://codepen.io/codewithsadee",
+    label: "Leetcode",
+    href: "https://leetcode.com/u/kshcodes/",
   },
 ];
 const Footer = () => {
@@ -51,12 +45,18 @@ const Footer = () => {
       <div className="container">
         <div className="lg:grid lg:grid-cols-2">
           <div className="mb-10">
-            <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
-              Let&apos;s work together today!
-            </h2>
-
-            <ButtonPrimary href="mailto:kshitijrattan03@gmail.com" 
-            label='Connect' icon='chevron_right' classes='reveal-up flex items-center' iconClass={'connectBtn'}/>
+            <h2 className="headline-2  mb-8 lg:max-w-[12ch] reveal-up">
+            Thanks for visiting!
+          </h2>
+          
+           <ButtonPrimary
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=kshitijrattan03@gmail.com"
+  target="_blank"
+  label="Connect"
+  icon="chevron_right"
+  classes="reveal-up flex items-center"
+  iconClass="connectBtn"
+/>
           </div>
 
           <div className="lg:grid lg:grid-cols-2 gap-4 lg:pl-20">
@@ -101,7 +101,7 @@ const Footer = () => {
           </a>
 
           <p className="text-zinc-500 text-sm reveal-up">
-            &copy; 2025 <span className="text-zinc-200 reveal-up">Kshitij Rattan</span>
+            &copy; {new Date().getFullYear()} <span className="text-zinc-200 reveal-up">Kshitij Rattan</span>
           </p>
         </div>
       </div>

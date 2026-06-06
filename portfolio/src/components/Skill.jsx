@@ -2,44 +2,58 @@ import React from "react";
 import SkillCard from "./SkillCard";
 const skillItem = [
   {
-    imgSrc: "/images/figma.svg",
-    label: "Figma",
-    desc: "Design tool",
+    imgSrc: "/images/react.svg",
+    label: "React",
+    desc: "Frontend Framework",
   },
   {
-    imgSrc: "/images/css3.svg",
-    label: "CSS",
-    desc: "User Interface",
+    imgSrc: "/images/typescript.svg",
+    label: "TypeScript",
+    desc: "Type Safety",
   },
+  
+  {
+    imgSrc: "/images/redux.svg",
+    label: "Redux",
+    desc: "State Management",
+  },
+
   {
     imgSrc: "/images/javascript.svg",
     label: "JavaScript",
-    desc: "Interaction",
+    desc: "Core Language",
   },
   {
     imgSrc: "/images/nodejs.svg",
     label: "NodeJS",
-    desc: "Web Server",
+    desc: "Backend Services",
   },
   {
     imgSrc: "/images/expressjs.svg",
     label: "ExpressJS",
-    desc: "Node Framework",
+    desc: "Backend Framework",
   },
+  {
+    imgSrc: "/images/postgresql.svg",
+    label: "PostgreSQL",
+    desc: "Relational DB",
+  },
+
   {
     imgSrc: "/images/mongodb.svg",
     label: "MongoDB",
-    desc: "Database",
+    desc: "NoSQL Database",
   },
   {
-    imgSrc: "/images/react.svg",
-    label: "React",
-    desc: "Framework",
+    imgSrc: "/images/azure.svg", // when you download it
+    label: "Azure DevOps",
+    desc: "CI/CD & Boards",
   },
+
   {
-    imgSrc: "/images/tailwindcss.svg",
-    label: "TailwindCSS",
-    desc: "User Interface",
+    imgSrc: "/images/git.svg",
+    label: "Git",
+    desc: "Version Control",
   },
 ];
 
@@ -51,14 +65,14 @@ function Skill() {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="headline-2 reveal-up">Essential Tools I use</h2>
+        <h2 className="headline-2 reveal-up">Technologies & Expertise</h2>
 
-        <p className="text-zinc-400 mt-3 mb-8 max-4-[50ch] reveal-up">
-          Discover the powerful tools and technologies I use to create
-          exceptional, high-performing websites & applications.
-        </p>
+        <p className="text-zinc-400 mt-3 mb-8 reveal-up">
+  Technologies, tools, and engineering practices I use to build scalable
+  enterprise applications and production-ready solutions.
+</p>
 
-        <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
+        <div className="grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-5">
           {
             skillItem.map(({ imgSrc, label, desc }, key) => (
                 <SkillCard imgSrc={imgSrc} label={label} desc={desc} key={key} classes="reveal-up"/>
